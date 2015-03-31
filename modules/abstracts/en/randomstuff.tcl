@@ -7,6 +7,12 @@
 bMotion_abstract_register "randomStuff"
 bMotion_abstract_reset "randomStuff"
 bMotion_abstract_batchadd "randomStuff" {
+	"They call me Feline, they call me Meatbeach, they call me Beachball, they call me Hardball."
+	"They call me Super stab, they call me Slapback, they call me Weedkiller, they call me bunt cake."
+	"They call me Stiff arm, they call me Punchface, they call me Hardhead, they call me Quick sand."
+	"They call me Dirt leg, they call me moustache, they call me whiistler, they call me Dumb dan."
+	"They call me Sleepy man, they call me Ball man, they call me Quickstick, they call me Hate hat."
+	"They call me Airhead, they call me whoa now, they call me hit maker, they call me quartz clock."
 	"Those delightful birds with their chirp chirp chirp and their tweet tweet tweet%! %VAR{sound_short}"
 	"Knowledge is knowing a %VAR{fruits} is a fruit, wisdom is not putting it in a fruit salad"
 	"Knowledge is knowing a %VAR{vegetables} is a vegetable, wisdom is not putting it in a vegetable salad"

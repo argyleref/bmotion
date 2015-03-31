@@ -2,6 +2,15 @@
 Customized bMotion for the Beer and Board Games youtube show community.
 bMotion by James "Off" Seward; see original readme below.
 
+README for the Folks
+------------------
+Want to add something to the bot? If you're familiar with git you can edit /plugins/en/simple_folks.tcl
+Check out https://github.com/jamesoff/bmotion/wiki/Simple-Plugins for reference on editing those files.
+
+If you're not familiar with git but still have a suggestion toss me an email. Include what you want said and what would prompt the bot to say it.
+
+
+
 README for bMotion
 ------------------
 
