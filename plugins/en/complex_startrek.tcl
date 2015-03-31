@@ -148,7 +148,7 @@ proc bMotionBanzaiBrigMidBet { channel } {
 }
 
 proc bMotionDoBrig { channel } {
-  global bMotionInfo bbgCharges bbgNouns bbgPunishments
+  global bMotionInfo charges trekNouns punishments
 
   set nick [bMotion_plugins_settings_get "complex:startrek" "brig" $channel ""]
 	if {$nick == ""} {
@@ -165,13 +165,12 @@ proc bMotionDoBrig { channel } {
     bMotionDoAction $channel "" "Betting ends!"
   }
 
-  bMotionDoAction $channel $nick "%%, you are charged with %VAR{bbgCharges}, and %VAR{bbgCharges}"
+  bMotionDoAction $channel $nick "%%, you are charged with %VAR{charges}, and %VAR{charges}"
 	bMotion_plugins_settings_set "complex:startrek" "brig" $channel "" ""
 
   set guilty [rand 2]
   if {$guilty} {
-  if {$guilty} {
-    bMotionDoAction $channel "" "You have been found guilty, and are sentenced to %VAR{bbgPunishments}. And may God have mercy on your soul."
+    bMotionDoAction $channel "" "You have been found guilty, and are sentenced to %VAR{punishments}. And may God have mercy on your soul."
     if {$bMotionInfo(banzaiModeBrig) == 1} {
       if {[llength $bMotionInfo(brigGuilty)] > 0} {
         bMotionDoAction $channel $bMotionInfo(brigGuilty) "Congraturation go to big winner who are %%. Well done! Riches beyond your wildest dreams are yours to taking!"
@@ -252,4 +251,5 @@ proc bMotion_plugins_complex_startrek_nick { nick host handle channel newnick } 
 		}
 	}
 	return 0
+}
 }
